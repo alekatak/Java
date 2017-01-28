@@ -1,0 +1,74 @@
+/* Положительные и отрицательные числа
+Ввести с клавиатуры три целых числа. Вывести на экран количество положительных и количество отрицательных чисел в исходном наборе,
+в следующем виде:
+"количество отрицательных чисел: а", "количество положительных чисел: б", где а, б - искомые значения.
+Пример для чисел 2 5 6:
+количество отрицательных чисел: 0
+количество положительных чисел: 3
+Пример для чисел -2 -5 6:
+количество отрицательных чисел: 2
+количество положительных чисел: 1
+*/
+
+import java.io.*;
+
+public class Solution
+{
+    public static void main(String[] args) throws Exception
+    {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int numb1 = Integer.parseInt(reader.readLine());
+        int numb2 = Integer.parseInt(reader.readLine());
+        int numb3 = Integer.parseInt(reader.readLine());
+
+        if (numb1 > 0 && numb2 > 0 && numb3 > 0)
+        {
+            String а = "0";
+            String b = "3";
+            System.out.println("количество отрицательных чисел:" +" "+ а);
+            System.out.println("количество положительных чисел:" +" "+ b);
+        } else if (numb1 < 0 && numb2 > 0 && numb3 > 0)
+        {
+            String а = "1";
+            String b = "2";
+            System.out.println("количество отрицательных чисел:" +" "+ а);
+            System.out.println("количество положительных чисел:" +" "+ b);
+        } else if (numb1 > 0 && numb2 < 0 && numb3 > 0)
+        {
+            String а = "1";
+            String b = "2";
+            System.out.println("количество отрицательных чисел:" +" "+ а);
+            System.out.println("количество положительных чисел:" +" "+ b);
+        } else if (numb1 > 0 && numb2 > 0 && numb3 < 0)
+        {
+            String а = "1";
+            String b = "2";
+            System.out.println("количество отрицательных чисел:" +" "+ а);
+            System.out.println("количество положительных чисел:" +" "+ b);
+        } else if (numb1 < 0 && numb2 < 0 && numb3 < 0)
+        {
+            String а = "3";
+            String b = "0";
+            System.out.println("количество отрицательных чисел:" +" "+ а);
+            System.out.println("количество положительных чисел:" +" "+ b);
+        } else if (numb1 < 0 && numb2 < 0 && numb3 > 0)
+        {
+            String а = "2";
+            String b = "1";
+            System.out.println("количество отрицательных чисел:" +" "+ а);
+            System.out.println("количество положительных чисел:" +" "+ b);
+        } else if (numb1 < 0 && numb2 > 0 && numb3 < 0)
+        {
+            String а = "2";
+            String b = "1";
+            System.out.println("количество отрицательных чисел:" +" "+ а);
+            System.out.println("количество положительных чисел:" +" "+ b);
+        } else if (numb1 > 0 && numb2 < 0 && numb3 < 0)
+        {
+            String а = "2";
+            String b = "1";
+            System.out.println("количество отрицательных чисел:" +" "+ а);
+            System.out.println("количество положительных чисел:" +" "+ b);
+        }
+    }
+}
